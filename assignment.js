@@ -1,3 +1,6 @@
+/**
+ *  Convert Feet To Miles
+ */
 function feetToMile(feet) {
     var mile = feet * (1/5280);
     return mile;
@@ -5,6 +8,9 @@ function feetToMile(feet) {
 var mileCount = feetToMile(15840);
 console.log("Convert Feet to Miles will be : "+mileCount);
 
+/**
+ * Wood Calculation to make Chair, Table & Hat
+ */
 function woodCalculator(woodQuantity) {
     var woodChair = Math.floor(woodQuantity * 1);
     if (woodChair >= 1) {
@@ -36,6 +42,9 @@ function woodCalculator(woodQuantity) {
 }
 woodCalculator(8);
 
+/** 
+ * Brick Calculation to make a building based on different condition
+ */
 function brickCalculator(floor)
 {
     if (floor <= 10) {
@@ -78,6 +87,9 @@ function brickCalculator(floor)
 var neededBricks = brickCalculator(22);
 console.log("Total required bricks are "+neededBricks);
 
+/** 
+ * Find those friend Whose name is small than other, Equal length are also qualified to output
+ */
 function tinyFriend(str) {
     var minLength = str[0].length;
     var tinyName = str[0];
